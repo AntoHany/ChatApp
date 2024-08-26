@@ -1,0 +1,17 @@
+.home .welcom-text{
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  padding: 7px;
+  text-transform: capitalize;
+}
+.home .welcom-text h3{
+  margin: 10px;
+}
+.home .welcom-text a{
+  display: block;
+  width: fit-content;
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin: 10px;
+}

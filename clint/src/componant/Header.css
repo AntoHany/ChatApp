@@ -1,0 +1,32 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h2{
+  flex-basis: 50%;
+  margin: 0;
+}
+header ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  a{
+    color: inherit;
+    margin: 5px 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  a:hover{
+    border-bottom: 1px solid;
+  }
+}
+header button{
+  text-transform: capitalize;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}

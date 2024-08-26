@@ -1,0 +1,79 @@
+body{
+  font-family: "Cairo", sans-serif;
+  background-color: #eeeeee;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* Start Theme */
+body.dark{
+  background-color: #2a2a2a;
+  color: #ffffff;
+  .sub-text{
+    color: #ffffff;
+  }
+  .background{
+    background-color: #89f336;
+    color: #2b2b2b;
+  }
+  .background:hover{
+    background-color: #79de2c;
+  }
+  .chat-background{
+    background-color: #eeeeee;
+    color: #2a2a2a;
+  }
+}
+body.light{
+  background-color: #eeeeee;
+  color: #2b2b2b;
+  .sub-text{
+    color: #b3b3b3;
+  }
+  .background{
+    background-color: #8d9797;
+    color: #ffffff;
+  }
+  .background:hover{
+    background-color: #8c8e8e;
+  }
+  .chat-background{
+    background-color: #a8a8a84b;
+  }
+}
+/* End Theme */
+
+/* START GLOBAL RULES */
+.container
+{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) 
+{
+  .container
+  {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) 
+{
+  .container
+  {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) 
+{
+  .container
+  {
+    width: 1170px;
+  }
+}
+/* END GLOBAL RULES */

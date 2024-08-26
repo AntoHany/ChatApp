@@ -1,0 +1,31 @@
+.login {
+  margin-top: 50px;
+}
+.login .bar{
+  display: block;
+  padding-bottom: 15px;
+}
+.login .bar input{
+  border: none;
+  border-bottom: 1px solid;
+  caret-color: #1daa61;
+  color: #1daa61;
+  font-size: 20px;
+  border-radius: 6px;
+  outline: none;
+}
+.login .bar input::placeholder{
+  padding-left: 5px;
+}
+.login .bar input:focus::placeholder{
+  color: transparent;
+  transition: .3s;
+}
+.login .bar button{
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}

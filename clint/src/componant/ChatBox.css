@@ -1,0 +1,69 @@
+.chat-box{
+  position: relative;
+  margin-top: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 7px #00000061;
+}
+.chat-box ul{
+  width: 100%;  
+  height: calc(100vb - 200px);
+  overflow-y: scroll;
+  padding: 0;
+}
+.chat-box li{
+  font-size: 18px;
+  padding: 0 10px;
+  margin: 7px 0;
+}
+.chat-box li.me{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1daa61;
+  color: #2a2a2a;
+}
+.chat-box li .username{
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 5px;
+}
+.chat-box li .message{
+  font-size: 18px;
+  padding-right: 5px;
+}
+.chat-box li .time{
+  font-size: 14px;
+  padding-right: 5px;
+  color: #4e4e4e;
+}
+.chat-box .bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.chat-box .bar input{
+  flex-basis: 85%;
+  border: none;
+  border-bottom: 1px solid;
+  caret-color: #1daa61;
+  color: #1daa61;
+  font-size: 20px;
+  border-radius: 6px;
+  outline: none;
+}
+.chat-box .bar input::placeholder{
+  padding-left: 5px;
+}
+.chat-box .bar input:focus::placeholder{
+  color: transparent;
+  transition: .3s;
+}
+.chat-box .bar button{
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  flex-basis: 13%;
+  padding: 3px 0;
+  cursor: pointer;
+}
