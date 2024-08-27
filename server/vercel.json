@@ -1,5 +1,5 @@
 { 
   "version": 2,
-  "builds": [{"src": "./server/index.js", "use": "@now/node"}],
+  "builds": [{"src": "./index.js", "use": "@now/node"}],
   "rewrites": [{ "source": "/(.*)","destination": "/api" }] 
 }
