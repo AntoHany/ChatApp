@@ -11,7 +11,7 @@ import getTime from '../helper/GetTime';
 function ChatBox(){
   const form = useRef();
   const chatBox = useRef();
-  const url = 'http://localhost:5000';
+  const url = 'https://chat-app-server-one-rho.vercel.app';
   const [allMessageData, setMessageData] = useState([]);
   const userName = getCookie('username');
   const [message, setMessage] = useState('');
