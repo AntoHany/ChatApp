@@ -32,6 +32,7 @@ function ChatBox(){
     });
 
     return () => {
+        socket.off('connect');
         socket.off('receiveMessage');
     };
   }, []);
