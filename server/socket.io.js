@@ -3,7 +3,7 @@ const { Server } = require('socket.io')
 function initSocketIO(server){
   const io = new Server(server, {
     cors: {
-      origin: "https://chat-app-ten-eta-66.vercel.app/"
+      origin: "https://chat-app-ten-eta-66.vercel.app"
     }
   }) 
 
