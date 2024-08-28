@@ -21,6 +21,25 @@ Public chat page
 
 ---
 
+### Simple explanation
+
+Actually I used React as a front end and it is obviously a great UI library and the best thing about it is that you can control the entire site without reloading the page and this is done via virtual dom
+
+
+On the back end, I used Express by creating some routes to fetch and send data.
+
+
+I also use MongoDB as a database.
+
+
+In order to make the program a real-time application, I used Socket IO, which is a library through which you send the data sent from the server without any HTTP requests.
+
+[Take a look](https://chat-app-ten-eta-66.vercel.app/)
+
+<span style="color: red;font-size:20px">Warning</span>
+If you go in to look at this program it is not a real time application and this is because I am displaying it on Versel and it does not respond to real time applications
+
+---
 ### tools
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
