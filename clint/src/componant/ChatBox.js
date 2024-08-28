@@ -6,12 +6,11 @@ import { socket } from '../socket';
 import './ChatBox.css';
 import scrollToBottom from '../helper/scrollToBottom';
 import getTime from '../helper/GetTime';
-
+import { useURL } from '../store/store';
 
 function ChatBox(){
   const form = useRef();
   const chatBox = useRef();
-  const url = 'https://chat-app-server-one-rho.vercel.app';
   const [allMessageData, setMessageData] = useState([]);
   const userName = getCookie('username');
   const [message, setMessage] = useState('');
@@ -27,7 +26,6 @@ function ChatBox(){
     });
 
     socket.on('receiveMessage', (msg) => {
-        console.log('Message received:', msg);
         setMessageData((prevMessages) => [...prevMessages, msg]);
     });
 
@@ -47,8 +45,7 @@ function ChatBox(){
     }
     if (message !== ''){
       try {
-        await axios.post(`${url}/message`, messageData);
-        console.log("send data sucsses/");
+        await axios.post(`${useURL}/message`, messageData);
         SocketServer(messageData);
       }catch (error){
         console.log(`data not send sucsses => ${error}`);
@@ -62,7 +59,7 @@ function ChatBox(){
   useEffect(() => {
     async function getData(){
       try {
-        await fetch(`${url}/message`)
+        await fetch(`${useURL}/message`)
         .then((res)=>res.json())
         .then((json)=> setMessageData(json));        
       } catch (error){
